@@ -1,0 +1,580 @@
+2024-09-04 03:08:18.307  INFO 8236 --- [main] c.f.m.MovieBookingAppApplication         : Starting MovieBookingAppApplication using Java 11.0.16.1 on 808f7fc26bc8568 with PID 8236 (C:\Users\Administrator\Downloads\movie-booking-app\target\classes started by Administrator in C:\Users\Administrator\Downloads\movie-booking-app)
+2024-09-04 03:08:18.312  INFO 8236 --- [main] c.f.m.MovieBookingAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-04 03:08:20.103  INFO 8236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-04 03:08:20.202  INFO 8236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 3 MongoDB repository interfaces.
+2024-09-04 03:08:21.136  INFO 8236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-09-04 03:08:21.153  INFO 8236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-04 03:08:21.153  INFO 8236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-09-04 03:08:21.372  INFO 8236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-04 03:08:21.373  INFO 8236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2960 ms
+2024-09-04 03:08:21.979  INFO 8236 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.16.1+1-LTS-1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@53d6e959], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3caee3a8]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@69a40b3c], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-09-04 03:08:21.996  INFO 8236 --- [cluster-ClusterId{value='66d781cd59c3005b627d2217', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:63}] to localhost:27017
+2024-09-04 03:08:21.998  INFO 8236 --- [cluster-ClusterId{value='66d781cd59c3005b627d2217', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=28734300}
+2024-09-04 03:08:21.998  INFO 8236 --- [cluster-rtt-ClusterId{value='66d781cd59c3005b627d2217', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:64}] to localhost:27017
+2024-09-04 03:08:22.933  INFO 8236 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10d98940, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58b8f9e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@44a93f8a, org.springframework.security.web.header.HeaderWriterFilter@6caa4dc5, org.springframework.security.web.authentication.logout.LogoutFilter@432c0f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c5ae8fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17354708, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32a033b6, org.springframework.security.web.session.SessionManagementFilter@45707f76, org.springframework.security.web.access.ExceptionTranslationFilter@525b8922, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4537880f]
+2024-09-04 03:08:23.234 DEBUG 8236 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-04 03:08:23.369 DEBUG 8236 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-09-04 03:08:23.400 DEBUG 8236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-04 03:08:23.416 DEBUG 8236 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-04 03:08:23.783  INFO 8236 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-09-04 03:08:23.942  INFO 8236 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-ticket-bookings-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ticket-bookings
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-09-04 03:08:24.220  INFO 8236 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-09-04 03:08:24.222  INFO 8236 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-09-04 03:08:24.222  INFO 8236 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1725399504217
+2024-09-04 03:08:24.227  INFO 8236 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Subscribed to topic(s): booked_tickets
+2024-09-04 03:08:24.264  INFO 8236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-09-04 03:08:24.283  INFO 8236 --- [main] c.f.m.MovieBookingAppApplication         : Started MovieBookingAppApplication in 7.072 seconds (JVM running for 8.179)
+2024-09-04 03:08:24.806  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Resetting the last seen epoch of partition booked_tickets-0 to 0 since the associated topicId changed from null to R8-hX0BZQpmfFph616SUfQ
+2024-09-04 03:08:24.811  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Cluster ID: Yfx8Pxo_Q3C88n8zDajKnw
+2024-09-04 03:08:24.812  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Discovered group coordinator 172.19.56.34:9092 (id: 2147483647 rack: null)
+2024-09-04 03:08:24.815  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 03:08:24.833  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Request joining group due to: need to re-join with the given member-id
+2024-09-04 03:08:24.834  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 03:08:24.842  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully joined group with generation Generation{generationId=23, memberId='consumer-ticket-bookings-1-34fd7121-9b75-4db3-a06a-6db7f8cddb7b', protocol='range'}
+2024-09-04 03:08:24.848  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully synced group in generation Generation{generationId=23, memberId='consumer-ticket-bookings-1-34fd7121-9b75-4db3-a06a-6db7f8cddb7b', protocol='range'}
+2024-09-04 03:08:24.851  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Notifying assignor about the new Assignment(partitions=[booked_tickets-0])
+2024-09-04 03:08:24.854  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Adding newly assigned partitions: booked_tickets-0
+2024-09-04 03:08:24.867  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Setting offset for partition booked_tickets-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[172.19.56.34:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-04 03:08:24.868  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ticket-bookings: partitions assigned: [booked_tickets-0]
+2024-09-04 03:17:25.308  INFO 8236 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Node -1 disconnected.
+2024-09-04 03:47:15.230  INFO 8236 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-04 03:47:15.232  INFO 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-04 03:47:15.235 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-09-04 03:47:15.235 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-09-04 03:47:15.235 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-09-04 03:47:15.257 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18a0fa97
+2024-09-04 03:47:15.258 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@bfe7dd6
+2024-09-04 03:47:15.258 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-04 03:47:15.258  INFO 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2024-09-04 03:47:15.342 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1.0/moviebooking/register", parameters={}
+2024-09-04 03:47:15.365 DEBUG 8236 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.fse.moviebookingapp.controller.AdminController#userRegistration(RegistrationDto)
+2024-09-04 03:47:15.608 DEBUG 8236 --- [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegistrationDto(firstName=Mad, lastName=Max, password=madmax@1, confirmPassword=madmax@1, email=madm (truncated)...]
+2024-09-04 03:47:16.042  INFO 8236 --- [http-nio-8082-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:65}] to localhost:27017
+2024-09-04 03:47:16.193 DEBUG 8236 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.fse.moviebookingapp.exception.GlobalExceptionHandler#userExceptions(UserExceptions)
+2024-09-04 03:47:16.238 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-09-04 03:47:16.240 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorResponse(error=USER_EXISTS, info=Login ID already exists. Please try with different Login ID)]
+2024-09-04 03:47:16.264 DEBUG 8236 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.fse.moviebookingapp.exception.UserExceptions: USER_EXISTS]
+2024-09-04 03:47:16.266 DEBUG 8236 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-09-04 03:54:46.316  INFO 6932 --- [main] c.f.m.MovieBookingAppApplication         : Starting MovieBookingAppApplication using Java 11.0.16.1 on 808f7fc26bc8568 with PID 6932 (C:\Users\Administrator\Downloads\movie-booking-app\target\classes started by Administrator in C:\Users\Administrator\Downloads\movie-booking-app)
+2024-09-04 03:54:46.322  INFO 6932 --- [main] c.f.m.MovieBookingAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-04 03:54:48.422  INFO 6932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-04 03:54:48.527  INFO 6932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 3 MongoDB repository interfaces.
+2024-09-04 03:54:49.527  INFO 6932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-09-04 03:54:49.544  INFO 6932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-04 03:54:49.545  INFO 6932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-09-04 03:54:49.764  INFO 6932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-04 03:54:49.764  INFO 6932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3310 ms
+2024-09-04 03:54:50.347  INFO 6932 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.16.1+1-LTS-1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@492521c4], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@443a06ad]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@6ddd1c51], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-09-04 03:54:50.371  INFO 6932 --- [cluster-rtt-ClusterId{value='66d78cb285e62b4adef8f5b3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:67}] to localhost:27017
+2024-09-04 03:54:50.372  INFO 6932 --- [cluster-ClusterId{value='66d78cb285e62b4adef8f5b3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:66}] to localhost:27017
+2024-09-04 03:54:50.387  INFO 6932 --- [cluster-ClusterId{value='66d78cb285e62b4adef8f5b3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39762700}
+2024-09-04 03:54:51.224  INFO 6932 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31d4b3e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@278de2b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@a1e912f, org.springframework.security.web.header.HeaderWriterFilter@2eb6d34a, org.springframework.security.web.authentication.logout.LogoutFilter@7c0de229, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68b3248a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e158f33, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fc1c7e, org.springframework.security.web.session.SessionManagementFilter@601d295, org.springframework.security.web.access.ExceptionTranslationFilter@34beadce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d6778d5]
+2024-09-04 03:54:51.537 DEBUG 6932 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-04 03:54:51.670 DEBUG 6932 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-09-04 03:54:51.696 DEBUG 6932 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-04 03:54:51.711 DEBUG 6932 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-04 03:54:52.005  INFO 6932 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-09-04 03:54:52.201  INFO 6932 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-ticket-bookings-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ticket-bookings
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-09-04 03:54:52.484  INFO 6932 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-09-04 03:54:52.486  INFO 6932 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-09-04 03:54:52.486  INFO 6932 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1725402292481
+2024-09-04 03:54:52.491  INFO 6932 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Subscribed to topic(s): booked_tickets
+2024-09-04 03:54:52.537  INFO 6932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-09-04 03:54:52.565  INFO 6932 --- [main] c.f.m.MovieBookingAppApplication         : Started MovieBookingAppApplication in 7.218 seconds (JVM running for 8.265)
+2024-09-04 03:54:53.117  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Resetting the last seen epoch of partition booked_tickets-0 to 0 since the associated topicId changed from null to R8-hX0BZQpmfFph616SUfQ
+2024-09-04 03:54:53.121  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Cluster ID: Yfx8Pxo_Q3C88n8zDajKnw
+2024-09-04 03:54:53.123  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Discovered group coordinator 172.19.56.34:9092 (id: 2147483647 rack: null)
+2024-09-04 03:54:53.126  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 03:54:53.155  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Request joining group due to: need to re-join with the given member-id
+2024-09-04 03:54:53.155  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 03:55:20.357  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully joined group with generation Generation{generationId=24, memberId='consumer-ticket-bookings-1-1c33a803-f792-4bda-9f54-4c7ba99b3bf4', protocol='range'}
+2024-09-04 03:55:20.378  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully synced group in generation Generation{generationId=24, memberId='consumer-ticket-bookings-1-1c33a803-f792-4bda-9f54-4c7ba99b3bf4', protocol='range'}
+2024-09-04 03:55:20.382  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Notifying assignor about the new Assignment(partitions=[booked_tickets-0])
+2024-09-04 03:55:20.385  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Adding newly assigned partitions: booked_tickets-0
+2024-09-04 03:55:20.397  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Setting offset for partition booked_tickets-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[172.19.56.34:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-04 03:55:20.399  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ticket-bookings: partitions assigned: [booked_tickets-0]
+2024-09-04 04:03:06.469  INFO 6932 --- [cluster-ClusterId{value='66d78cb285e62b4adef8f5b3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method) ~[na:na]
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115) ~[na:na]
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:na]
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 5 common frames omitted
+
+2024-09-04 04:03:06.531  INFO 6932 --- [cluster-ClusterId{value='66d78cb285e62b4adef8f5b3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:68}] to localhost:27017
+2024-09-04 04:03:06.531  INFO 6932 --- [cluster-ClusterId{value='66d78cb285e62b4adef8f5b3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56222500}
+2024-09-04 04:03:53.149  INFO 6932 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Node -1 disconnected.
+2024-09-04 04:06:07.329  INFO 13444 --- [main] c.f.m.MovieBookingAppApplication         : Starting MovieBookingAppApplication using Java 11.0.16.1 on 808f7fc26bc8568 with PID 13444 (C:\Users\Administrator\Downloads\movie-booking-app\target\classes started by Administrator in C:\Users\Administrator\Downloads\movie-booking-app)
+2024-09-04 04:06:07.333  INFO 13444 --- [main] c.f.m.MovieBookingAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-04 04:06:09.374  INFO 13444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-04 04:06:09.447  INFO 13444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 MongoDB repository interfaces.
+2024-09-04 04:06:10.540  INFO 13444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-09-04 04:06:10.556  INFO 13444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-04 04:06:10.556  INFO 13444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-09-04 04:06:10.742  INFO 13444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-04 04:06:10.745  INFO 13444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3304 ms
+2024-09-04 04:06:11.835  INFO 13444 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.16.1+1-LTS-1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@615db358], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@256bb5be]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5fef0c19], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-09-04 04:06:11.844  INFO 13444 --- [cluster-rtt-ClusterId{value='66d78f5b275fdd01e4e7648a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:71}] to localhost:27017
+2024-09-04 04:06:11.840  INFO 13444 --- [cluster-ClusterId{value='66d78f5b275fdd01e4e7648a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:70}] to localhost:27017
+2024-09-04 04:06:11.917  INFO 13444 --- [cluster-ClusterId{value='66d78f5b275fdd01e4e7648a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26978500}
+2024-09-04 04:06:12.958  INFO 13444 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@370225c7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ac756b, org.springframework.security.web.context.SecurityContextPersistenceFilter@12f51a65, org.springframework.security.web.header.HeaderWriterFilter@995ad50, org.springframework.security.web.authentication.logout.LogoutFilter@13234ac9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f0c6b3c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@416a4275, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@156324b, org.springframework.security.web.session.SessionManagementFilter@3dbb3fb7, org.springframework.security.web.access.ExceptionTranslationFilter@21280cbb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ad1a276]
+2024-09-04 04:06:13.310 DEBUG 13444 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-04 04:06:13.450 DEBUG 13444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-09-04 04:06:13.482 DEBUG 13444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-04 04:06:13.511 DEBUG 13444 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-04 04:06:13.828  INFO 13444 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-09-04 04:06:13.980  INFO 13444 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-ticket-bookings-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ticket-bookings
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-09-04 04:06:14.190  INFO 13444 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-09-04 04:06:14.193  INFO 13444 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-09-04 04:06:14.193  INFO 13444 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1725402974188
+2024-09-04 04:06:14.197  INFO 13444 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Subscribed to topic(s): booked_tickets
+2024-09-04 04:06:14.232  INFO 13444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-09-04 04:06:14.250  INFO 13444 --- [main] c.f.m.MovieBookingAppApplication         : Started MovieBookingAppApplication in 7.865 seconds (JVM running for 8.81)
+2024-09-04 04:06:14.684  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Resetting the last seen epoch of partition booked_tickets-0 to 0 since the associated topicId changed from null to R8-hX0BZQpmfFph616SUfQ
+2024-09-04 04:06:14.687  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Cluster ID: Yfx8Pxo_Q3C88n8zDajKnw
+2024-09-04 04:06:14.688  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Discovered group coordinator 172.19.56.34:9092 (id: 2147483647 rack: null)
+2024-09-04 04:06:14.691  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 04:06:14.716  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Request joining group due to: need to re-join with the given member-id
+2024-09-04 04:06:14.716  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 04:06:36.211  INFO 13444 --- [http-nio-8082-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-04 04:06:36.212  INFO 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-04 04:06:36.212 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-09-04 04:06:36.212 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-09-04 04:06:36.212 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-09-04 04:06:36.214 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4c1398ff
+2024-09-04 04:06:36.214 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@193c2fe5
+2024-09-04 04:06:36.214 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-04 04:06:36.215  INFO 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-04 04:06:36.246 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/v1.0/moviebooking/register", parameters={}
+2024-09-04 04:06:36.256 DEBUG 13444 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.fse.moviebookingapp.controller.AdminController#userRegistration(RegistrationDto)
+2024-09-04 04:06:36.375 DEBUG 13444 --- [http-nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RegistrationDto(firstName=Mad, lastName=Max, password=madmax@1, confirmPassword=madmax@1, email=madm (truncated)...]
+2024-09-04 04:06:36.629  INFO 13444 --- [http-nio-8082-exec-9] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:72}] to localhost:27017
+2024-09-04 04:06:36.723 DEBUG 13444 --- [http-nio-8082-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.fse.moviebookingapp.exception.GlobalExceptionHandler#userExceptions(UserExceptions)
+2024-09-04 04:06:36.746 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2024-09-04 04:06:36.747 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ErrorResponse(error=USER_EXISTS, info=Login ID already exists. Please try with different Login ID)]
+2024-09-04 04:06:36.761 DEBUG 13444 --- [http-nio-8082-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.fse.moviebookingapp.exception.UserExceptions: USER_EXISTS]
+2024-09-04 04:06:36.761 DEBUG 13444 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-09-04 04:06:42.491  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully joined group with generation Generation{generationId=25, memberId='consumer-ticket-bookings-1-cb8c9b3f-b1c3-498d-a18b-1bd6cda43ebc', protocol='range'}
+2024-09-04 04:06:42.496  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully synced group in generation Generation{generationId=25, memberId='consumer-ticket-bookings-1-cb8c9b3f-b1c3-498d-a18b-1bd6cda43ebc', protocol='range'}
+2024-09-04 04:06:42.499  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Notifying assignor about the new Assignment(partitions=[])
+2024-09-04 04:06:42.499  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Adding newly assigned partitions: 
+2024-09-04 04:06:42.500  INFO 13444 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ticket-bookings: partitions assigned: []
+2024-09-04 04:34:26.761  INFO 13716 --- [main] c.f.m.MovieBookingAppApplication         : Starting MovieBookingAppApplication using Java 11.0.16.1 on 808f7fc26bc8568 with PID 13716 (C:\Users\Administrator\Downloads\movie-booking-app\target\classes started by Administrator in C:\Users\Administrator\Downloads\movie-booking-app)
+2024-09-04 04:34:26.767  INFO 13716 --- [main] c.f.m.MovieBookingAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-04 04:34:28.649  INFO 13716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-04 04:34:28.737  INFO 13716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 3 MongoDB repository interfaces.
+2024-09-04 04:34:29.576  INFO 13716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2024-09-04 04:34:29.589  INFO 13716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-04 04:34:29.590  INFO 13716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-09-04 04:34:29.779  INFO 13716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-04 04:34:29.780  INFO 13716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2913 ms
+2024-09-04 04:34:30.270  INFO 13716 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/11.0.16.1+1-LTS-1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5fef0c19], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2e6d76ba]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@22a6d75c], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-09-04 04:34:30.281  INFO 13716 --- [cluster-rtt-ClusterId{value='66d795fec3e11419eec26562', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:90}] to localhost:27017
+2024-09-04 04:34:30.283  INFO 13716 --- [cluster-ClusterId{value='66d795fec3e11419eec26562', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:89}] to localhost:27017
+2024-09-04 04:34:30.284  INFO 13716 --- [cluster-ClusterId{value='66d795fec3e11419eec26562', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30041099}
+2024-09-04 04:34:31.070  INFO 13716 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e97f115, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d6b42cf, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dbb3fb7, org.springframework.security.web.header.HeaderWriterFilter@7ed8b44, org.springframework.security.web.authentication.logout.LogoutFilter@5423a17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@182cc69e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12f51a65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f8ac8d5, org.springframework.security.web.session.SessionManagementFilter@6aa6c17, org.springframework.security.web.access.ExceptionTranslationFilter@35010a6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ff1f465]
+2024-09-04 04:34:31.381 DEBUG 13716 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-04 04:34:31.515 DEBUG 13716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2024-09-04 04:34:31.537 DEBUG 13716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-04 04:34:31.551 DEBUG 13716 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-04 04:34:31.833  INFO 13716 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-09-04 04:34:31.977  INFO 13716 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-ticket-bookings-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = ticket-bookings
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2024-09-04 04:34:32.160  INFO 13716 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-09-04 04:34:32.162  INFO 13716 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-09-04 04:34:32.163  INFO 13716 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1725404672158
+2024-09-04 04:34:32.168  INFO 13716 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Subscribed to topic(s): booked_tickets
+2024-09-04 04:34:32.268  INFO 13716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2024-09-04 04:34:32.284  INFO 13716 --- [main] c.f.m.MovieBookingAppApplication         : Started MovieBookingAppApplication in 6.397 seconds (JVM running for 7.376)
+2024-09-04 04:34:32.766  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Resetting the last seen epoch of partition booked_tickets-0 to 0 since the associated topicId changed from null to R8-hX0BZQpmfFph616SUfQ
+2024-09-04 04:34:32.769  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Cluster ID: Yfx8Pxo_Q3C88n8zDajKnw
+2024-09-04 04:34:32.771  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Discovered group coordinator 172.19.56.34:9092 (id: 2147483647 rack: null)
+2024-09-04 04:34:32.774  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 04:34:32.801  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Request joining group due to: need to re-join with the given member-id
+2024-09-04 04:34:32.801  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] (Re-)joining group
+2024-09-04 04:35:04.053  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully joined group with generation Generation{generationId=35, memberId='consumer-ticket-bookings-1-79bee2f5-e8cd-4c34-b953-9f51bd7a2b32', protocol='range'}
+2024-09-04 04:35:04.057  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Successfully synced group in generation Generation{generationId=35, memberId='consumer-ticket-bookings-1-79bee2f5-e8cd-4c34-b953-9f51bd7a2b32', protocol='range'}
+2024-09-04 04:35:04.060  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Notifying assignor about the new Assignment(partitions=[booked_tickets-0])
+2024-09-04 04:35:04.063  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Adding newly assigned partitions: booked_tickets-0
+2024-09-04 04:35:04.075  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-ticket-bookings-1, groupId=ticket-bookings] Setting offset for partition booked_tickets-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[172.19.56.34:9092 (id: 0 rack: null)], epoch=0}}
+2024-09-04 04:35:04.076  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : ticket-bookings: partitions assigned: [booked_tickets-0]
